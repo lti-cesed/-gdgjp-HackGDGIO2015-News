@@ -19,6 +19,7 @@
     text-align: center;
 }
         #logotipo {
+            margin-top: 10px;
             width: 64px;
         }
                 #logotipo img {

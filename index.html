@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-br" ng-app="NewsWear">
+
 <head>
     <meta charset="UTF-8">
     <title>NewsWear</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/notificacaoController.js"></script>
 </head>
-<body>
+
+<body ng-controller="NotificacaosController">
 
     <div id="notificacao" ng-repeat="notificacao in notificacaos">
 
@@ -17,13 +22,15 @@
         </div><!-- endIcone-->
 
         <div id="titulo">
-            {{titulo}}
+            {{notificacao.titulo}}
         </div><!-- endTitulo -->
 
         <div id="mensagem">
-            {{mensagem}}
+            {{notificacao.mensagem}}
         </div><!-- endMensagem -->
 
     </div><!-- endNotificacao -->
+
+</body>
 
 </html>

@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>NewsWear</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>News Wear</h1>
-</body>
+
+    <div id="notificacao" ng-repeat="notificacao in notificacaos">
+
+        <div id="icone">
+            A
+        </div><!-- endIcone-->
+
+        <div id="titulo">
+            {{titulo}}
+        </div><!-- endTitulo -->
+
+        <div id="mensagem">
+            {{mensagem}}
+        </div><!-- endMensagem -->
+
+    </div><!-- endNotificacao -->
+
 </html>

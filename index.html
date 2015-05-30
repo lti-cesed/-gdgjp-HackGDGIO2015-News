@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 
-<html lang="pt-br" ng-app="NewsWear">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <title>NewsWear</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html">
     <script src="js/notificacaoController.js"></script>
 </head>
 
-<body ng-controller="NotificacaosController">
+<body>
 
-    <div id="notificacao" ng-repeat="notificacao in notificacaos">
+    <div id="notificacao" repeat="{{notificacaos as notificacao}}">
 
         <div id="icone">
             <div id="logotipo">

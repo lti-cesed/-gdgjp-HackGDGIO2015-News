@@ -1,0 +1,91 @@
+body{
+    font-family: "Open Sans";
+    background: url("../img/bg.png") no-repeat black;
+    background: black;
+    background-size: 100%;
+
+}
+
+#logoApp{
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    min-width: 150px;
+    max-width: 150px;
+}
+    #logoApp img{
+        float: left;
+        width: 100%;
+    }
+
+.notificacao {
+    float: left;
+    width: 96%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #424242;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icone {
+    float: right;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    line-height: 64px;
+    font-size: 30px;
+    color: #666;
+    text-align: center;
+}
+        .logotipo {
+            margin-top: 10px;
+            width: 64px;
+        }
+                .logotipo img {
+                    width: 44px;
+                }
+
+
+.titulo {
+    font-size: 22px;
+    padding: 8px 0 16px;
+    color: white;
+}
+
+.mensagem {
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: white;
+}
+
+paper-toolbar.paper-toolbar-0 {
+    float: left;
+    width: 100%;
+    background: #212121;
+    color: #ffffff;
+    height: 62px !important;
+    margin-top: 20px;
+}
+
+
+footer{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    footer a{
+        width: 10%;
+        min-width: 50px;
+        max-width: 50px;
+        margin: 0 auto;
+        display: block;
+    }
+        footer a img{
+            float: left;
+            width: 100%;
+        }

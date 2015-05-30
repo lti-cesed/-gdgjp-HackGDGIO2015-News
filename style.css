@@ -18,6 +18,13 @@
     color: #666;
     text-align: center;
 }
+        #logotipo {
+            width: 64px;
+        }
+                #logotipo img {
+                    width: 44px;
+                }
+
 
 #titulo {
     font-size: 22px;

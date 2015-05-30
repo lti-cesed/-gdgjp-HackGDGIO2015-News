@@ -14,7 +14,11 @@
 
 <body>
 
-    <div id="notificacao" repeat="{{notificacaos as notificacao}}">
+    <polymer-element name="music-demo">
+
+    <template repeat="{{notificacaos as notificacao}}">
+
+    <div id="notificacao">
 
         <div id="icone">
             <div id="logotipo">
@@ -31,6 +35,10 @@
         </div><!-- endMensagem -->
 
     </div><!-- endNotificacao -->
+
+    </template>
+
+    </polymer-element>
 
 </body>
 

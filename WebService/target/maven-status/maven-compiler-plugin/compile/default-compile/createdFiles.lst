@@ -1,0 +1,6 @@
+br\facisa\cesed\webservicenewswear\dao\Util.class
+br\facisa\cesed\webservicenewswear\entidades\Notificacao.class
+br\facisa\cesed\webservicenewswear\entidades\Notificacao_.class
+br\facisa\cesed\webservicenewswear\servicos\NotificacaoResource.class
+br\facisa\cesed\webservicenewswear\filters\CORSFilter.class
+br\facisa\cesed\webservicenewswear\dao\NotificacaoDAO.class

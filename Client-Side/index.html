@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NewsWear</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+
+</head>
+
+<body>
+
+    <polymer-element name="news-wear" attributes="notificacaos">
+
+    <template repeat="{{notificacaos as notificacao}}">
+
+    <div id="notificacao">
+
+        <div id="icone">
+            <div id="logotipo">
+                <img src="img/logotipo.png">
+            </div><!-- endLogotipo-->
+        </div><!-- endIcone-->
+
+        <div id="titulo">
+            {{notificacao.titulo}}
+        </div><!-- endTitulo -->
+
+        <div id="mensagem">
+            {{notificacao.mensagem}}
+        </div><!-- endMensagem -->
+
+    </div><!-- endNotificacao -->
+
+    </template>
+    
+    <script>
+    
+        Polymer("news-wear", {
+    notificacaos: [
+
+        {"titulo": "Assalto ao Banco Bradesco em Campina Grande",
+            "mensagem": "Sete homens armados com fuzis chegaram em uma agência do Bradesco próxima a feira ..."},
+        {"titulo": "Teste",
+              "mensagem": "Testando ..."
+            }
+
+    ]
+        });
+        
+    </script>
+
+    </polymer-element>
+    
+    <news-wear></news-wear>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity" tools:deviceIds="wear_round"
+    android:id="@+id/a"
+    android:background="#ffffffff">
+
+    <TextView android:id="@+id/text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/b"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/text"
+        android:layout_alignTop="@+id/text">
+
+        <ImageView
+            android:layout_width="399dp"
+            android:layout_height="259dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/bg_pedras" />
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/text"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/gridLayout">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageView2"
+            android:layout_alignEnd="@+id/text"
+            android:src="@drawable/icon"
+            android:layout_row="3"
+            android:layout_column="6"
+            android:paddingRight="15dp" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_row="2"
+        android:layout_column="5"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/text">
+
+        <ImageView
+            android:layout_width="213dp"
+            android:layout_height="68dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/logo_policia"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Assalto ao banco do bradesco"
+        android:id="@+id/titulo"
+        android:textColor="#ff000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="11:50"
+        android:id="@+id/hora"
+        android:textColor="#ff000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="12dp" />
+
+</RelativeLayout>
